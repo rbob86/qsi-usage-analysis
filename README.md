@@ -2,6 +2,8 @@
 
 This README outlines the process of determining usage values for customer accounts based on data retrieved from Snowflake metrics at https://qsidev.cloud.looker.com/explore/snowflake_wh_monitoring/query_history?qid=R0ccnk18WxGMpV6sKbMOBl&origin_space=230&toggle=fil,vis for the months of August and July.
 
+First, update .env with your GCP project location and region. You should be authenticated to gcloud in your environment with [Application Default Credentials](https://cloud.google.com/docs/authentication/provide-credentials-adc).
+
 The overall process is broken down into multiple scripts, such that output can be reviewed after each step:
 
 ## 1. Store data from Looker Snowflake dashboards
